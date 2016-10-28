@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Camer Demo/ViewController.swift"
+            timestampString = "499358590.528329"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Camer Demo/AppDelegate.swift"
+            timestampString = "499361064.476975"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Camer_Demo.AppDelegate.window.getter : Swift.Optional&lt;__ObjC.UIWindow&gt;"
+                  moduleName = "Camer Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/billy/Documents/Camer%20Demo/Camer%20Demo/AppDelegate.swift"
+                  timestampString = "499361064.492759"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Camer_Demo.AppDelegate.window.setter : Swift.Optional&lt;__ObjC.UIWindow&gt;"
+                  moduleName = "Camer Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/billy/Documents/Camer%20Demo/Camer%20Demo/AppDelegate.swift"
+                  timestampString = "499361064.495687"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Camer_Demo.AppDelegate.init () -&gt; Camer_Demo.AppDelegate"
+                  moduleName = "Camer Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/billy/Documents/Camer%20Demo/Camer%20Demo/AppDelegate.swift"
+                  timestampString = "499361064.497064"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Camer Demo/AppDelegate.swift"
+            timestampString = "499361065.286413"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Camer_Demo.AppDelegate.__deallocating_deinit"
+                  moduleName = "Camer Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/billy/Documents/Camer%20Demo/Camer%20Demo/AppDelegate.swift"
+                  timestampString = "499361065.294898"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Camer_Demo.AppDelegate.init () -&gt; Camer_Demo.AppDelegate"
+                  moduleName = "Camer Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/billy/Documents/Camer%20Demo/Camer%20Demo/AppDelegate.swift"
+                  timestampString = "499361065.296324"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Camer_Demo.AppDelegate.__allocating_init () -&gt; Camer_Demo.AppDelegate"
+                  moduleName = "Camer Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/billy/Documents/Camer%20Demo/Camer%20Demo/AppDelegate.swift"
+                  timestampString = "499361065.297729"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Camer Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/billy/Documents/Camer%20Demo/Camer%20Demo/AppDelegate.swift"
+                  timestampString = "499361065.299165"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
