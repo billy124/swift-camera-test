@@ -18,11 +18,11 @@ class ViewController: UIViewController,
     @IBOutlet weak var imagePicked: UIImageView!
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var sepiaBtn: UIButton!
+    @IBOutlet weak var vintageBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        saveButton.isHidden = true
-        sepiaBtn.isHidden = true
+        toggleButtons(set: true)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -43,6 +43,7 @@ class ViewController: UIViewController,
             self.present(imagePicker, animated: true, completion: nil)
         }
     }
+   
 
     @IBAction func CameraAction(_ sender: UIButton) {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
@@ -55,9 +56,9 @@ class ViewController: UIViewController,
             imagePicker.allowsEditing = true;
             self.present(imagePicker, animated: true, completion: nil)
             
-            saveButton.isHidden = false
-            sepiaBtn.isHidden = false
+            toggleButtons(set: false)
 
+            
             Camera.setTitle("Take another photo", for: UIControlState.normal)
         }
 
@@ -84,12 +85,21 @@ class ViewController: UIViewController,
         let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alertController.addAction(defaultAction)
         present(alertController, animated: true, completion: nil)
-        saveButton.isHidden = true
-        sepiaBtn.isHidden = true
+        
+        toggleButtons(set: true)
 
     }
     
     @IBAction func addFilterAction(_ sender: UIButton) {
+        sepia(filterName : "CISepiaTone");
+    }
+    
+    @IBAction func vintage(_ sender: Any) {
+        vintage(filterName : "CIPhotoEffectProcess");
+
+    }
+    
+    func vintage(filterName : String) {
         guard let image = self.imagePicked.image?.cgImage else { return }
         
         let openGLContext = EAGLContext(api: .openGLES3)
@@ -97,13 +107,38 @@ class ViewController: UIViewController,
         
         let ciImage = CIImage(cgImage: image)
         
-        let filter = CIFilter(name: "CISepiaTone")
+        let filter = CIFilter(name: filterName)
+        filter?.setValue(ciImage, forKey: kCIInputImageKey)
+        
+        if let output = filter?.value(forKey: kCIOutputImageKey) as? CIImage {
+            self.imagePicked?.image = UIImage(cgImage: context.createCGImage(output, from: output.extent)!)
+        }
+        
+    }
+    
+    func edit(filterName : String) {
+        guard let image = self.imagePicked.image?.cgImage else { return }
+        
+        let openGLContext = EAGLContext(api: .openGLES3)
+        let context = CIContext(eaglContext: openGLContext!)
+        
+        let ciImage = CIImage(cgImage: image)
+        
+        let filter = CIFilter(name: filterName)
         filter?.setValue(ciImage, forKey: kCIInputImageKey)
         filter?.setValue(1, forKey: kCIInputIntensityKey)
         
         if let output = filter?.value(forKey: kCIOutputImageKey) as? CIImage {
             self.imagePicked?.image = UIImage(cgImage: context.createCGImage(output, from: output.extent)!)
         }
+
+    }
+    
+    func toggleButtons(set: Bool) {
+        saveButton.isHidden = set
+        sepiaBtn.isHidden = set
+        vintageBtn.isHidden = set
+
     }
 }
 
